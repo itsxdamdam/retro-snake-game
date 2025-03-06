@@ -1,0 +1,11 @@
+@import "tailwindcss";
+
+@theme {
+  --color-clifford: #da373d;
+}
+
+@layer base {
+  body {
+    @apply flex items-center justify-center h-screen m-0 font-[VT323] bg-neutral-600;
+  }
+}
