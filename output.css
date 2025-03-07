@@ -227,6 +227,9 @@
   .sticky {
     position: sticky;
   }
+  .top-\[60\%\] {
+    top: 60%;
+  }
   .isolate {
     isolation: isolate;
   }
@@ -338,14 +341,8 @@
       max-width: 96rem !important;
     }
   }
-  .m-4 {
-    margin: calc(var(--spacing) * 4);
-  }
   .m-\[5px\] {
     margin: 5px;
-  }
-  .m-px {
-    margin: 1px;
   }
   .box-border {
     box-sizing: border-box;
@@ -688,41 +685,14 @@
   .auto-rows-min {
     grid-auto-rows: min-content;
   }
-  .grid-cols-20 {
-    grid-template-columns: repeat(20, minmax(0, 1fr));
-  }
-  .grid-cols-\[20\,20\] {
-    grid-template-columns: 20,20;
-  }
-  .grid-cols-\[20\] {
-    grid-template-columns: 20;
-  }
-  .grid-cols-\[200px_minmax\(900px\,_1fr\)_100px\] {
-    grid-template-columns: 200px minmax(900px, 1fr) 100px;
-  }
-  .grid-cols-\[repeat\(\)\] {
-    grid-template-columns: repeat();
-  }
-  .grid-cols-\[repeat\(20\)\] {
-    grid-template-columns: repeat(20);
-  }
-  .grid-cols-\[repeat\(20\,\)\] {
-    grid-template-columns: repeat(20,);
-  }
   .grid-cols-\[repeat\(20\,20px\)\] {
     grid-template-columns: repeat(20,20px);
-  }
-  .grid-cols-\[repeat\] {
-    grid-template-columns: repeat;
   }
   .grid-cols-none {
     grid-template-columns: none;
   }
   .grid-cols-subgrid {
     grid-template-columns: subgrid;
-  }
-  .grid-rows-\[repeat\(\)\] {
-    grid-template-rows: repeat();
   }
   .grid-rows-\[repeat\(20\,20px\)\] {
     grid-template-rows: repeat(20,20px);
@@ -971,8 +941,8 @@
   .rounded {
     border-radius: 0.25rem;
   }
-  .rounded-full {
-    border-radius: calc(infinity * 1px);
+  .rounded-\[100px\] {
+    border-radius: 100px;
   }
   .rounded-s {
     border-start-start-radius: 0.25rem;
@@ -1281,6 +1251,9 @@
   .p-9 {
     padding: calc(var(--spacing) * 9);
   }
+  .p-\[30px\] {
+    padding: 30px;
+  }
   .text-center {
     text-align: center;
   }
@@ -1399,6 +1372,9 @@
   }
   .\[color\:red\]\/50\! {
     color: color-mix(in oklab, red 50%, transparent) !important;
+  }
+  .text-\[\#333\] {
+    color: #333;
   }
   .capitalize {
     text-transform: capitalize;
@@ -1851,6 +1827,41 @@
     justify-content: center;
     background-color: var(--color-neutral-600);
     font-family: VT323;
+  }
+}
+@layer components {
+  .game-border-1 {
+    border-radius: 30px;
+    border-style: var(--tw-border-style);
+    border-width: 10px;
+    --tw-border-style: solid;
+    border-style: solid;
+    border-color: #595f43;
+    --tw-inset-shadow: inset 0 0 0 10px var(--tw-inset-shadow-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    --tw-inset-shadow-color: #595f43;
+  }
+  .game-border-2 {
+    border-radius: 26px;
+    border-style: var(--tw-border-style);
+    border-width: 8px;
+    --tw-border-style: solid;
+    border-style: solid;
+    border-color: #abb78a;
+    --tw-inset-shadow: inset 0 0 0 10px var(--tw-inset-shadow-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    --tw-inset-shadow-color: #abb78a;
+  }
+  .game-border-3 {
+    border-radius: 20px;
+    border-style: var(--tw-border-style);
+    border-width: 20px;
+    --tw-border-style: solid;
+    border-style: solid;
+    border-color: #8b966c;
+    --tw-inset-shadow: inset 0 0 0 5px var(--tw-inset-shadow-color, currentcolor);
+    box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
+    --tw-inset-shadow-color: #8b966c;
   }
 }
 @property --tw-translate-x {

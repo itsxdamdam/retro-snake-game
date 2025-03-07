@@ -1,11 +1,29 @@
 @import "tailwindcss";
 
 @theme {
-  --color-clifford: #da373d;
+  --inset-shadow-board: inset 0 0 0 10px;
+  --inset-shadow-board-3: inset 0 0 0 5px;
+  --color-board-1: #595f43;
+  --color-board-1: #595f43;
+  --color-board-1: #595f43;
 }
 
 @layer base {
   body {
     @apply flex items-center justify-center h-screen m-0 font-[VT323] bg-neutral-600;
+  }
+}
+
+@layer components {
+  .game-border-1 {
+    @apply border-solid border-[#595f43] inset-shadow-board inset-shadow-[#595f43] rounded-[30px] border-[10px];
+  }
+
+  .game-border-2 {
+    @apply border-solid border-[#abb78a] inset-shadow-board inset-shadow-[#abb78a] rounded-[26px] border-[8px];
+  }
+
+  .game-border-3 {
+    @apply border-solid border-[#8b966c] inset-shadow-board-3 inset-shadow-[#8b966c] rounded-[20px] border-[20px];
   }
 }
