@@ -24,6 +24,6 @@
   }
 
   .game-border-3 {
-    @apply border-solid border-[#8b966c] inset-shadow-board-3 inset-shadow-[#8b966c] rounded-[20px] border-[20px];
+    @apply border-solid border-[#8b966c] inset-shadow-board-3 inset-shadow-[#8b966c] rounded-[20px] border-[20px] bg-[#c4cfa3];
   }
 }
