@@ -1,6 +1,8 @@
 "use strict";
 // Define html documents
 const board = document.getElementById("game-board");
+const instructionText = document.getElementById("instruction-text");
+const logo = document.getElementById("logo");
 // Define game variables
 const gridSize = 20;
 let snake = [{ x: 10, y: 10 }];
@@ -8,6 +10,7 @@ let food = generateFood();
 let direction = "right";
 let gameInterval;
 let gameSpeedDelay = 200;
+let gameStarted = false;
 // draw game map, snake and food
 function draw() {
     board.innerHTML = "";
@@ -63,17 +66,31 @@ function move() {
             break;
     }
     snake.unshift(head);
-    snake.pop();
+    // snake.pop();
     if (head.x === food.x && head.y === food.y) {
         food = generateFood();
-        clearInterval();
+        clearInterval(gameInterval);
         gameInterval = setInterval(() => {
             move();
             draw();
         }, gameSpeedDelay);
     }
+    else {
+        snake.pop();
+    }
 }
-setInterval(() => {
-    move();
-    draw();
-}, 6000);
+// setInterval(() => {
+//   move();
+//   draw();
+// }, 6000);
+// start game function
+function startGame() {
+    gameStarted = true;
+    instructionText.style.display = "none";
+    logo.style.display = "none";
+    gameInterval = setInterval(() => {
+        move();
+        // checkCollision();
+        draw();
+    }, gameSpeedDelay);
+}
