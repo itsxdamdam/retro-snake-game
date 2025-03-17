@@ -230,17 +230,8 @@
   .sticky {
     position: sticky;
   }
-  .top-\[0\%\] {
-    top: 0%;
-  }
-  .top-\[50\%\] {
-    top: 50%;
-  }
   .top-\[60\%\] {
     top: 60%;
-  }
-  .top-\[70\%\] {
-    top: 70%;
   }
   .isolate {
     isolation: isolate;
@@ -469,12 +460,6 @@
   }
   .w-4 {
     width: calc(var(--spacing) * 4);
-  }
-  .w-\[300px\] {
-    width: 300px;
-  }
-  .w-\[350px\] {
-    width: 350px;
   }
   .w-\[400px\] {
     width: 400px;
@@ -1330,9 +1315,6 @@
     font-size: var(--text-2xl);
     line-height: var(--tw-leading, var(--text-2xl--line-height));
   }
-  .text-\[20px\] {
-    font-size: 20px;
-  }
   .text-\[40px\] {
     font-size: 40px;
   }
@@ -1913,6 +1895,22 @@
     --tw-inset-shadow: inset 0 0 0 5px var(--tw-inset-shadow-color, currentcolor);
     box-shadow: var(--tw-inset-shadow), var(--tw-inset-ring-shadow), var(--tw-ring-offset-shadow), var(--tw-ring-shadow), var(--tw-shadow);
     --tw-inset-shadow-color: #8b966c;
+  }
+  .snake {
+    border-style: var(--tw-border-style);
+    border-width: 1px;
+    --tw-border-style: solid;
+    border-style: solid;
+    border-color: #5a5a5a;
+    background-color: #414141;
+  }
+  .food {
+    border-style: var(--tw-border-style);
+    border-width: 5px;
+    --tw-border-style: solid;
+    border-style: solid;
+    border-color: #999;
+    background-color: #dedede;
   }
 }
 @property --tw-translate-x {

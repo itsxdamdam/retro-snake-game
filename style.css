@@ -26,4 +26,12 @@
   .game-border-3 {
     @apply border-solid border-[#8b966c] inset-shadow-board-3 inset-shadow-[#8b966c] rounded-[20px] border-[20px] bg-[#c4cfa3];
   }
+
+  .snake {
+    @apply bg-[#414141] border-[#5a5a5a] border-[1px] border-solid;
+  }
+
+  .food {
+    @apply bg-[#dedede] border-[#999] border-[5px] border-solid;
+  }
 }
