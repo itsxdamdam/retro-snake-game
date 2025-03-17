@@ -32,6 +32,6 @@
   }
 
   .food {
-    @apply bg-[#dedede] border-[#999] border-[5px] border-solid;
+    @apply bg-[#dedede] border-[#999] border-[5px] border-solid rounded-full;
   }
 }

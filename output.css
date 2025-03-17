@@ -1905,6 +1905,7 @@
     background-color: #414141;
   }
   .food {
+    border-radius: calc(infinity * 1px);
     border-style: var(--tw-border-style);
     border-width: 5px;
     --tw-border-style: solid;
