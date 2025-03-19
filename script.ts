@@ -111,7 +111,7 @@ function startGame() {
 }
 
 // keypress event listen
-function handleKeyPress(e:any) {
+function handleKeyPress(e: any) {
   if ((!gameStarted && e.code === "Space") || (!gameStarted && e.key === " ")) {
     startGame();
   } else {
@@ -133,3 +133,21 @@ function handleKeyPress(e:any) {
 }
 
 document.addEventListener("keydown", handleKeyPress);
+
+function increaseSpeed() {
+  if (gameSpeedDelay > 150) {
+    gameSpeedDelay -= 5;
+  } else if (gameSpeedDelay > 100) {
+    gameSpeedDelay -= 3;
+  } else if (gameSpeedDelay > 50) {
+    gameSpeedDelay -= 2;
+  } else if (gameSpeedDelay > 25) {
+    gameSpeedDelay -= 1;
+  }
+}
+
+// function checkCollision() {
+//   const head = snake[0]
+
+
+// }
