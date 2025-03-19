@@ -17,8 +17,8 @@
   <body>
     <div>
       <div class="flex justify-between text-[40px] font-extrabold">
-        <h1 class="score text-[#abb78a] my-[10px]">000</h1>
-        <h1 class="highScore my-[10px] text-[#d8ddca] hidden">000</h1>
+        <h1 id="score" class="text-[#abb78a] my-[10px]">000</h1>
+        <h1 id="highScore" class="my-[10px] text-[#d8ddca] hidden">000</h1>
       </div>
       <div class="game-border-1">
         <div class="game-border-2">
@@ -31,8 +31,14 @@
         </div>
       </div>
     </div>
-    <img id="logo" class="bg-[#c4cfa3] absolute" src="snake-game-ai-gen.png" alt="logo" />
-    <h1 id="instruction-text"
+    <img
+      id="logo"
+      class="bg-[#c4cfa3] absolute"
+      src="snake-game-ai-gen.png"
+      alt="logo"
+    />
+    <h1
+      id="instruction-text"
       class="absolute top-[60%] text-center text-[#333] w-[400px] p-[30px] m-0 capitalize font-extrabold text-2xl"
     >
       Press spacebar to start the game
