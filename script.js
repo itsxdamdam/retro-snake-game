@@ -156,7 +156,7 @@ function resetGame() {
 }
 function updateScore() {
     const currentScore = snake.length - 1;
-    console.log(currentScore);
+    // console.log(currentScore);
     score.textContent = currentScore.toString().padStart(3, "0");
 }
 function stopGame() {
